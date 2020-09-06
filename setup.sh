@@ -12,6 +12,8 @@ sudo mkdir -p ~/nasm-lab
 sudo cp -r * ~/nasm-lab
 
 # adding automatic mounting in dosbox configuration file
-dosbox
+dosbox &
+sleep 4s
+killall dosbox
 dir="$HOME/nasm-lab/"
 sed "/autoexec/ a mount c $dir\nC:" ~/.dosbox/dosbox-0.74.conf | tee ~/.dosbox/dosbox-0.74.conf
