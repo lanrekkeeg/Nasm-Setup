@@ -16,4 +16,4 @@ dosbox &
 sleep 4s
 killall dosbox
 dir="$HOME/nasm-lab/"
-sed "/autoexec/ a mount c $dir\nC:" ~/.dosbox/dosbox-0.74.conf | tee ~/.dosbox/dosbox-0.74.conf
+sudo sed "/autoexec/ a mount c $dir\nC:" ~/.dosbox/dosbox-0.74.conf |sudo tee -a ~/.dosbox/dosbox-0.74.conf
