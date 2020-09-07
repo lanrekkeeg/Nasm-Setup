@@ -15,8 +15,12 @@ sudo cp -r * ~/nasm-lab
 dosbox &
 sleep 4s
 killall dosbox
+
+#getting the config file name
+
+file=$(ls ~/.dosbox)
 dir="$HOME/nasm-lab/"
-sudo sed "/autoexec/ a mount c $dir\nC:" ~/.dosbox/dosbox-0.74.conf |sudo tee -a ~/.dosbox/dosbox-0.74.conf
+sudo sed "/autoexec/ a mount c $dir\nC:" ~/.dosbox/$file |sudo tee -a ~/.dosbox/$file
 
 echo "################SETUPT FINISHED####################"
 echo "PLEASE TAKE A NOTE OF WORKING DIRECTROY WHERE YOU WILL BE DOING YOUR LABS"
