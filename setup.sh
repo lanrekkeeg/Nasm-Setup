@@ -8,6 +8,10 @@ sudo apt-get install dosbox
 # creating repository
 sudo mkdir -p ~/nasm-lab
 
+# giving permission
+sudo chmod 777 ~/nasm-lab
+
+
 # moving files to nasm-lab
 sudo cp -r * ~/nasm-lab
 
